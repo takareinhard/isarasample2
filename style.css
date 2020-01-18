@@ -10,6 +10,38 @@ body {
   height: 3230px;
 }
 
+button {
+font-size:18px;
+height:48px;
+width:151px;
+box-shadow: 3px 3px 10px #00000029;
+border-radius: 24px;
+border-style:none;
+}
+
+h2 {
+	color: #444;
+	font-size: 24px;
+	display: flex;
+	align-items: center;
+}
+
+h2:before, h2:after {
+	content: "";
+	flex-grow: 1;
+	height: 4px;
+	background: #109954;
+	display: block;
+}
+
+h2:before {
+	margin-right: .4em;
+}
+
+h2:after {
+	margin-left: .4em;
+}
+
 .container {
   width: 1080px;
   margin-left:auto;
@@ -28,14 +60,7 @@ body {
 }
 
 .recruit {
-font-size:18px;
-background-color: #FFE000;
-height:48px;
-width:151px;
 background: #FFE000;
-box-shadow: 3px 3px 10px #00000029;
-border-radius: 24px;
-border-style:none;
 }
 
 .company-about {
@@ -56,6 +81,7 @@ border-style:none;
 .heading-txt-02 {
   font-size: 16px;
   margin-top: 34px;
+  margin-bottom: 40px;
   font-weight: lighter;
   line-height: 1.6;
 }
@@ -64,6 +90,19 @@ border-style:none;
 width: 560px;
 height: 448px;
 }
+
+.contact {
+  background: #109954;
+  color:white;
+}
+
+.document {
+  width:222.95px;
+  border: medium solid #109954;
+  background: white;
+  color:#109954;
+}
+
 
 footer {
   background-color: #333;
