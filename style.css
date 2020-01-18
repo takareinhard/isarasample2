@@ -19,11 +19,17 @@ border-radius: 24px;
 border-style:none;
 }
 
+.heading h2 {
+  font-size: 36px;
+}
+
 h2 {
+  margin-top: 120px;
+  margin-bottom: 109px;
 	color: #444;
 	font-size: 24px;
 	display: flex;
-	align-items: center;
+  align-items: center;
 }
 
 h2:before, h2:after {
@@ -31,15 +37,17 @@ h2:before, h2:after {
 	flex-grow: 1;
 	height: 4px;
 	background: #109954;
-	display: block;
+  display: block;
 }
 
 h2:before {
-	margin-right: .4em;
+  margin-right: 40px;
+  margin-left: 25%;
 }
 
 h2:after {
-	margin-left: .4em;
+  margin-left: 40px;
+  margin-right: 25%;
 }
 
 .container {
@@ -103,6 +111,17 @@ height: 448px;
   color:#109954;
 }
 
+.service-box-wrapper {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.service-box {
+  width: 40%;
+  margin-right: 50px;
+  margin-bottom: 70px;
+}
 
 footer {
   background-color: #333;
