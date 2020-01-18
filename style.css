@@ -38,19 +38,31 @@ border-radius: 24px;
 border-style:none;
 }
 
-.company_about {
+.company-about {
   display: flex;
   justify-content: space-between;
   margin-top: 80px;
 }
 
-.company_about_title {
+.company-about-title {
   height: 448px;
 }
 
-.leading_company {
+.heading-txt-01 {
   font-size: 36px;
   font-weight: bold;
+}
+
+.heading-txt-02 {
+  font-size: 16px;
+  margin-top: 34px;
+  font-weight: lighter;
+  line-height: 1.6;
+}
+
+.mv-img-header {
+width: 560px;
+height: 448px;
 }
 
 footer {
