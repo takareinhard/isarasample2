@@ -27,7 +27,8 @@ h2 {
   margin-top: 120px;
   margin-bottom: 109px;
 	color: #444;
-	font-size: 24px;
+  font-size: 24px;
+  font-weight: bold;
 	display: flex;
   align-items: center;
 }
@@ -42,12 +43,12 @@ h2:before, h2:after {
 
 h2:before {
   margin-right: 40px;
-  margin-left: 25%;
+  margin-left: 20%;
 }
 
 h2:after {
   margin-left: 40px;
-  margin-right: 25%;
+  margin-right: 20%;
 }
 
 .container {
@@ -118,9 +119,43 @@ height: 448px;
 }
 
 .service-box {
-  width: 40%;
-  margin-right: 50px;
-  margin-bottom: 70px;
+  width: 30%;
+  text-align: center;
+}
+
+.service-box p{
+  margin-top: 30px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.about-inner {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-box-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.more {
+  margin-top: 44px;
+  background-color: #109954;
+  color:white;
+}
+
+.about-box-text p {
+  line-height: 1.5;
+}
+
+.about-box-photo figure {
+  width: 450px;
+  height: 278px;
+  box-shadow: 0px 11px 20px #00000029;
+  
 }
 
 footer {
