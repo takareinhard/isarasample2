@@ -6,7 +6,6 @@ img {
 body {
   font-family: "游ゴシック体", YuGothic;
   color:#333333;
-  width:1280px;
 }
 
 button {
@@ -255,6 +254,7 @@ height: 448px;
 }
 
 footer {
+  min-width: 1280px;
   background-color: #E8E8E8;
   height: 135px;
 }
@@ -437,6 +437,7 @@ li + li {
     padding-bottom: 20px;
   }
   footer {
+    min-width: 368px;
     position: relative;
     height: 289px;
   }
