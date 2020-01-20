@@ -24,6 +24,7 @@ a {
 time {
   font-weight: bold;
 }
+
 .heading h2 {
   font-size: 36px;
   margin-top: 120px;
@@ -112,6 +113,7 @@ height: 448px;
   border: medium solid #109954;
   background: white;
   color:#109954;
+  font-weight: bold;
 }
 
 .service-box-wrapper {
@@ -187,11 +189,17 @@ height: 448px;
 }
 
 .news-box-wrapper {
+  position:relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-top : solid 1px #D6D6D6;
   height: 205px;
+}
+
+.news-box-wrapper a{
+  display: block;
+  position:absolute;
 }
 
 .news-box-wrapper:last-child {
@@ -301,7 +309,6 @@ li + li {
   }
   .company-about {
     display: flex;
-    justify-content: center;
     flex-direction: column-reverse;
     margin-top: 10px;
   }
@@ -332,5 +339,128 @@ li + li {
   }
   .document {
     margin-top: 15px;
+  }
+
+  .heading h2 {
+    margin-top: 100px;
+    margin-bottom: 80px;
+  }
+
+  .heading h2:before {
+    margin-right: 18px;
+    margin-left: 0%;
+  }
+  .heading h2:after {
+    margin-left: 18px;
+    margin-right: 0%;
+  }
+  .service-box-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .service-box {
+    height: 200px;
+    width: 200px;
+    margin-bottom: 100px;
+  }
+  .service-box p{
+    font-size: 20px;
+    white-space: nowrap
+  }
+  .about-inner{
+    display: flex;
+    flex-direction: column;
+  }
+  .about-box-wrapper-1{
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+  .about-box-wrapper-2{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 70px;
+  }
+  .about-box-wrapper-3{
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+  .about-box-photo figure {
+    width: 344.78px;
+    height: 213px;
+    box-shadow: 0px 11px 20px #00000029;
+  }
+  .about-box-text p {
+    text-align: left;
+    margin-top: 50px;
+  }
+  .about-box-text p br {
+    display: none;
+  }
+  .about-box-text h3 {
+    text-align: left;
+    margin-top: 50px;
+  }
+  .news-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .news-box-wrapper{
+    flex-direction: column;
+    align-items: center;
+    height: 416px;
+    margin-bottom: 18px;
+  }
+  .news-box-photo {
+    height: 168px;
+    width: 300px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .news-box-text {
+    text-align: left;
+  }
+  .news-box-wrapper:last-child {
+    padding-bottom: 20px;
+  }
+  footer {
+    position: relative;
+    height: 289px;
+  }
+  .footer-logo-sitemap {
+    flex-direction: column;
+  }
+  .footer-list {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .sitemap-list {
+    height: 0px;
+  }
+  .footer-copyright {
+    position: absolute;
+    bottom:20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-left:auto;
+    margin-right:auto;
+    display: flex;
+    align-items: flex-end;
+  }
+  .footer-list {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .footer-list li {
+    margin-top: 23px;
+    margin-left: 0px;
+  }
+  li + li {
+    border-left: 0px solid #000;
   }
 }
