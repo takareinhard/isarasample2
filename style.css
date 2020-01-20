@@ -6,8 +6,6 @@ img {
 body {
   font-family: "游ゴシック体", YuGothic;
   color:#333333;
-  width: 1280px;
-  height: 3230px;
 }
 
 button {
@@ -19,11 +17,15 @@ border-radius: 24px;
 border-style:none;
 }
 
-.heading h2 {
-  font-size: 36px;
+a {
+  text-decoration: none;
 }
 
-h2 {
+time {
+  font-weight: bold;
+}
+.heading h2 {
+  font-size: 36px;
   margin-top: 120px;
   margin-bottom: 109px;
 	color: #444;
@@ -33,7 +35,7 @@ h2 {
   align-items: center;
 }
 
-h2:before, h2:after {
+.heading h2:before, .heading h2:after {
 	content: "";
 	flex-grow: 1;
 	height: 4px;
@@ -41,12 +43,12 @@ h2:before, h2:after {
   display: block;
 }
 
-h2:before {
+.heading h2:before {
   margin-right: 40px;
   margin-left: 20%;
 }
 
-h2:after {
+.heading h2:after {
   margin-left: 40px;
   margin-right: 20%;
 }
@@ -135,7 +137,7 @@ height: 448px;
   margin-right: auto;
 }
 
-.about-box-wrapper {
+.about-box-wrapper-1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -155,20 +157,180 @@ height: 448px;
   width: 450px;
   height: 278px;
   box-shadow: 0px 11px 20px #00000029;
-  
+}
+
+.about-box-wrapper-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.about-box-wrapper-2 h3{
+  color: #109954;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.about-box-wrapper-2 p{
+  margin-top: 30px;
+}
+
+.about-box-wrapper-2 button{
+  margin-top: 30px;
+}
+
+.news-inner {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.news-box-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top : solid 1px #D6D6D6;
+  height: 205px;
+}
+
+.news-box-wrapper:last-child {
+  border-bottom : solid 1px #D6D6D6;
+}
+
+.time-category {
+  display: flex;
+  align-items: center;
+}
+
+.news-box-photo figure {
+  height: 168px;
+  width: 300px;
+}
+
+.category {
+  margin-left: 24px;
+  font-weight: bold;
+  font-size: 14px;
+  height:26px;
+  width:101px;
+  border: 2px solid #109954;
+  background: white;
+  color:#109954;
+  box-shadow: none;
+  border-radius: 14px;
+}
+
+.news-box-text h2{
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.news-box-text p{
+  margin-top: 20px;
+}
+
+.bottom-more {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
 }
 
 footer {
-  background-color: #333;
-  padding: 15px;
-  text-align: center;
+  background-color: #E8E8E8;
+  height: 135px;
 }
 
-footer small {
-  color:  #fff;
+.footer-logo-sitemap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 25px;
+}
+
+.footer-img {
+  height: 70px;
+  width: 70px;
+}
+
+.sitemap-list {
+  height: 20px;
+}
+
+ul {
+  display: flex;
+}
+
+li:before {
+  content: "";
+  margin-right: 18px;
+}
+
+li {
+  font-size: 14px;
+  list-style-type: none;
+  color: #000;
+  flex-grow: 1;
+  text-align: center;
+  margin-left: 18px;
+}
+
+
+li + li {
+  border-left: 1px solid #000;
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-copyright small{
+  color:#333333;
   font-size: 14px;
 }
 
 @media screen and (max-width:768px) {
-
+  .mv {
+    margin-top: 21px;
+  }
+  .container {
+    width: 345px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .company-about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    margin-top: 10px;
+  }
+  .mv-img-header {
+    width: 345px;
+    height: 276px;
+  }
+  .company-about_title {
+    text-align:center;
+  }
+  .heading-txt-01 {
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 28px;
+    line-height: 1.6;
+    height: 76px;
+    width: 196px;
+  }
+  .heading-txt-02 {
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  .br-small:after {
+    content: "\A" ;
+    white-space: pre ;
+  }
+  .document {
+    margin-top: 15px;
+  }
 }
