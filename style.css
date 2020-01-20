@@ -6,6 +6,7 @@ img {
 body {
   font-family: "游ゴシック体", YuGothic;
   color:#333333;
+  width:1280px;
 }
 
 button {
@@ -69,6 +70,11 @@ time {
 
 .mv-img {
   height: 33px;
+}
+
+.br-big:after {
+  content: "\A" ;
+  white-space: pre ;
 }
 
 .recruit {
@@ -198,8 +204,11 @@ height: 448px;
 }
 
 .news-box-wrapper a{
-  display: block;
-  position:absolute;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height:100%;
+  width: 100%;
 }
 
 .news-box-wrapper:last-child {
@@ -209,6 +218,8 @@ height: 448px;
 .time-category {
   display: flex;
   align-items: center;
+  width:232px;
+  justify-content: space-between;
 }
 
 .news-box-photo figure {
@@ -217,7 +228,6 @@ height: 448px;
 }
 
 .category {
-  margin-left: 24px;
   font-weight: bold;
   font-size: 14px;
   height:26px;
@@ -340,7 +350,6 @@ li + li {
   .document {
     margin-top: 15px;
   }
-
   .heading h2 {
     margin-top: 100px;
     margin-bottom: 80px;
@@ -434,10 +443,6 @@ li + li {
   .footer-logo-sitemap {
     flex-direction: column;
   }
-  .footer-list {
-    flex-direction: column;
-    justify-content: center;
-  }
   .sitemap-list {
     height: 0px;
   }
@@ -449,16 +454,22 @@ li + li {
     margin: auto;
     margin-left:auto;
     margin-right:auto;
-    display: flex;
-    align-items: flex-end;
   }
   .footer-list {
     flex-direction: column-reverse;
-    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: 11px;
+  }
+  .footer-list ul {
+    text-align: center;
+    margin-bottom: 40px;
   }
   .footer-list li {
-    margin-top: 23px;
+    margin-top: 12px;
     margin-left: 0px;
+  }
+  li:before {
+    display:none;
   }
   li + li {
     border-left: 0px solid #000;
