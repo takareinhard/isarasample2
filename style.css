@@ -91,6 +91,10 @@ time {
   white-space: pre ;
 }
 
+.br-small {
+  display: none;
+}
+
 .recruit {
 background: #FFE000;
 }
@@ -175,6 +179,7 @@ height: 448px;
 
 .more {
   margin-top: 44px;
+  width: 166px;
   background-color: #109954;
   color:white;
 }
@@ -374,6 +379,13 @@ li + li {
     margin-bottom: 20px;
     line-height: 1.5;
   }
+  .br-small {
+    display: inline;
+  }
+  .br-big {
+    display: none;
+  }
+  
   .br-small:after {
     content: "\A" ;
     white-space: pre ;
