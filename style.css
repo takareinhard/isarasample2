@@ -6,7 +6,15 @@ img {
 body {
   font-family: "游ゴシック体", YuGothic;
   color:#333333;
+  min-width: 1280px;
 }
+
+.container {
+  max-width: 1080px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
 
 button {
 font-size:18px;
@@ -21,6 +29,10 @@ a {
   text-decoration: none;
 }
 
+a:visited {
+  color:#333333;
+}
+
 time {
   font-weight: bold;
 }
@@ -30,10 +42,19 @@ time {
   margin-top: 120px;
   margin-bottom: 109px;
 	color: #444;
-  font-size: 24px;
+  font-size: 36px;
   font-weight: bold;
 	display: flex;
   align-items: center;
+  line-height: 3;
+}
+
+#news { 
+  margin-bottom: 101px;
+}
+
+#about { 
+  margin-bottom: 100px;
 }
 
 .heading h2:before, .heading h2:after {
@@ -54,17 +75,11 @@ time {
   margin-right: 20%;
 }
 
-.container {
-  width: 1080px;
-  margin-left:auto;
-  margin-right:auto;
-}
-
 .mv {
-  margin-top:30px;
   height: 70px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .mv-img {
@@ -83,6 +98,7 @@ background: #FFE000;
 .company-about {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 80px;
 }
 
@@ -119,12 +135,14 @@ height: 448px;
   background: white;
   color:#109954;
   font-weight: bold;
+  margin-left: 10px;
 }
 
 .service-box-wrapper {
   display:flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin:0 140px;
 }
 
 .service-box {
@@ -134,12 +152,17 @@ height: 448px;
 
 .service-box p{
   margin-top: 30px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
+}
+
+.service-box img{
+  height:200px;
 }
 
 .about-inner {
   max-width: 940px;
+  margin-bottom:15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -245,6 +268,7 @@ height: 448px;
 
 .news-box-text p{
   margin-top: 20px;
+  line-height: 1.5;
 }
 
 .bottom-more {
@@ -308,12 +332,17 @@ li + li {
   font-size: 14px;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
   .mv {
-    margin-top: 21px;
+    margin-top: 11px;
+  }
+  body {
+    min-width:375px;
+    font-family: "游ゴシック体", YuGothic;
+    color:#333333;
   }
   .container {
-    width: 345px;
+    max-width:345px;
     margin-left:auto;
     margin-right:auto;
   }
@@ -327,7 +356,9 @@ li + li {
     height: 276px;
   }
   .company-about_title {
+    display: flex;
     text-align:center;
+    flex-direction: column;
   }
   .heading-txt-01 {
     margin-left:auto;
@@ -348,13 +379,17 @@ li + li {
     white-space: pre ;
   }
   .document {
+    border: 2px solid #109954;
     margin-top: 15px;
+    margin-left: 0px;
   }
   .heading h2 {
     margin-top: 100px;
     margin-bottom: 80px;
   }
-
+  #news {
+    margin-top: 115px;
+  }
   .heading h2:before {
     margin-right: 18px;
     margin-left: 0%;
@@ -367,11 +402,15 @@ li + li {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin:0;
   }
   .service-box {
-    height: 200px;
+    height: 250px;
     width: 200px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+  }
+  .service-box:last-child {
+    margin-bottom: 0px;
   }
   .service-box p{
     font-size: 20px;
@@ -405,6 +444,10 @@ li + li {
   .about-box-text p {
     text-align: left;
     margin-top: 50px;
+    font-size: 0;
+  }
+  .about-box-text p span{
+    font-size: 16px;
   }
   .about-box-text p br {
     display: none;
