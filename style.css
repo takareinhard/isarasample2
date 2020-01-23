@@ -3,6 +3,11 @@ img {
   height: auto;
 }
 
+p {
+  max-width: 100%;
+  height: auto;
+}
+
 body {
   font-family: "游ゴシック体", YuGothic;
   color:#333333;
@@ -98,12 +103,12 @@ time {
 }
 
 .recruit {
-background: #FFE000;
+  width:151px;
+  background: #FFE000;
 }
 
 .company-about {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin-top: 80px;
 }
@@ -121,9 +126,16 @@ background: #FFE000;
   line-height: 1.6;
 }
 
+.company-button {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .company-about_title {
   width: 50%;
-  height: 448px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .company-about_image {
@@ -131,7 +143,7 @@ background: #FFE000;
   height: 448px;
   display: flex;
   align-items: center;
-  }
+}
 
 .about-button {
   width: 560px;
@@ -170,8 +182,8 @@ background: #FFE000;
   font-weight: bold;
 }
 
-.service-box img{
-  height:200px;
+.service-box img {
+  max-height:200px;
 }
 
 .about-inner {
@@ -198,9 +210,16 @@ background: #FFE000;
   line-height: 1.5;
 }
 
-.about-box-photo figure {
-  width: 450px;
-  height: 278px;
+.about-box-text {
+  width:450px;
+  line-height: 1.5;
+}
+
+.about-box-photo {
+  width:50%;
+}
+
+.about-box-photo img{
   box-shadow: 0px 11px 20px #00000029;
 }
 
@@ -284,6 +303,7 @@ background: #FFE000;
 .news-box-text p{
   margin-top: 20px;
   line-height: 1.5;
+  font-size:16px;
 }
 
 .bottom-more {
@@ -353,25 +373,44 @@ li + li {
   body {
     font-family: "游ゴシック体", YuGothic;
     color:#333333;
-  }
-  .container {
-    max-width:345px;
     margin-left:auto;
     margin-right:auto;
+  }
+  .container {
+    margin-left:15px;
+    margin-right:15px;
+    display: flex;
+    flex-direction: column;
   }
   .company-about {
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
     margin-top: 10px;
   }
   .mv-img-header {
-    width: 345px;
-    height: 276px;
+    max-height: 276px;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .company-about_image {
+    width: 100%;
+    height: auto;
+    margin-left:auto;
+    margin-right:auto;
   }
   .company-about_title {
+    width:100%;
     display: flex;
     text-align:center;
     flex-direction: column;
+    align-items: center;
+  }
+  .company-button {
+    display: flex;
+    flex-direction: column;
+    width:222px;
   }
   .heading-txt-01 {
     margin-left:auto;
@@ -389,6 +428,7 @@ li + li {
   }
   .br-small {
     display: inline;
+    font-size:14px;
   }
   .br-big {
     display: none;
@@ -402,6 +442,7 @@ li + li {
     border: 2px solid #109954;
     margin-top: 15px;
     margin-left: 0px;
+    width:222.95px;
   }
   .heading h2 {
     margin-top: 100px;
@@ -453,20 +494,27 @@ li + li {
     align-items: center;
     text-align: center;
   }
-  .about-box-photo figure {
-    width: 344.78px;
-    height: 213px;
+  .about-box-photo {
+    width: 100%;
+  }
+
+  .about-box-text{
+    width:100%;
+  }
+
+  .about-box-photo i{
     box-shadow: 0px 11px 20px #00000029;
   }
+
   .about-box-text p {
     text-align: left;
     margin-top: 50px;
     font-size: 0;
   }
-  .about-box-text p span{
+    p span{
     font-size: 16px;
   }
-  .about-box-text p br {
+    p br {
     display: none;
   }
   .about-box-text h3 {
@@ -497,7 +545,6 @@ li + li {
     padding-bottom: 20px;
   }
   footer {
-    min-width: 375px;
     position: relative;
     height: 289px;
   }
