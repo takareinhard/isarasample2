@@ -6,8 +6,8 @@ img {
 body {
   font-family: "游ゴシック体", YuGothic;
   color:#333333;
-  min-width: 1280px;
 }
+
 
 .container {
   max-width: 1080px;
@@ -15,17 +15,19 @@ body {
   margin-right:auto;
 }
 
-
 button {
+  max-width: 100%;
+  height: auto;
 font-size:18px;
 height:48px;
-width:151px;
 box-shadow: 3px 3px 10px #00000029;
 border-radius: 24px;
 border-style:none;
 }
 
 a {
+  max-width: 100%;
+    height: auto;
   text-decoration: none;
 }
 
@@ -106,10 +108,6 @@ background: #FFE000;
   margin-top: 80px;
 }
 
-.company-about-title {
-  height: 448px;
-}
-
 .heading-txt-01 {
   font-size: 36px;
   font-weight: bold;
@@ -123,12 +121,24 @@ background: #FFE000;
   line-height: 1.6;
 }
 
-.mv-img-header {
-width: 560px;
-height: 448px;
+.company-about_title {
+  width: 50%;
+  height: 448px;
+}
+
+.company-about_image {
+  width: 50%;
+  height: 448px;
+  display: flex;
+  align-items: center;
+  }
+
+.about-button {
+  width: 560px;
 }
 
 .contact {
+  width:166px;
   background: #109954;
   color:white;
 }
@@ -283,7 +293,6 @@ height: 448px;
 }
 
 footer {
-  min-width: 1280px;
   background-color: #E8E8E8;
   height: 135px;
 }
@@ -342,7 +351,6 @@ li + li {
     margin-top: 11px;
   }
   body {
-    min-width:375px;
     font-family: "游ゴシック体", YuGothic;
     color:#333333;
   }
