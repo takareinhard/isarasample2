@@ -23,7 +23,7 @@ p {
 }
 
 body {
-  font-family: YuGothic,'Yu Gothic','Arial','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック',sans-serif;
+  font-family: YuGothic,'Yu Gothic',sans-serif;
   color:#333333;
 }
 
@@ -89,14 +89,14 @@ time {
   margin-right: 20%;
 }
 
-.mv {
+.header {
   height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.mv-img {
+.header-img {
   height: 33px;
 }
 
@@ -114,7 +114,7 @@ time {
   background: #FFE000;
 }
 
-.company-about {
+.company-mv {
   display: flex;
   align-items: center;
   margin-top: 80px;
@@ -139,14 +139,14 @@ time {
   justify-content: flex-start;
 }
 
-.company-about_title {
+.company-mv_title {
   width: 50%;
   height: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.company-about_image {
+.company-mv_image {
   width: 50%;
   height: 448px;
   display: flex;
@@ -210,7 +210,18 @@ time {
   justify-content: space-between;
 }
 
-#more {
+#more,#more1,#more2 {
+  text-decoration: none;
+  max-width: 100%;
+  font-size:18px;
+  border-radius: 24px;
+  border-style:none;
+  width:151px;
+  height:48px;
+  box-shadow: 3px 3px 10px #00000029;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 44px;
   width: 166px;
   background-color: #109954;
@@ -264,6 +275,21 @@ time {
   margin-top: 30px;
 }
 
+.blog {
+  position: relative;
+  z-index: 1;
+}
+
+.blog-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-indent:-999px;
+  z-index: 2
+}
+
 .news-inner {
   max-width: 940px;
   margin-left: auto;
@@ -279,7 +305,7 @@ time {
   height: 205px;
 }
 
-.news-box-wrapper:last-child {
+.blog:last-child {
   border-bottom : solid 1px #D6D6D6;
 }
 
@@ -295,7 +321,18 @@ time {
   width: 300px;
 }
 
-#category {
+.blog .button-category {
+  text-decoration: none;
+  max-width: 100%;
+  font-size:18px;
+  border-radius: 24px;
+  border-style:none;
+  width:151px;
+  height:48px;
+  box-shadow: 3px 3px 10px #00000029;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: bold;
   font-size: 14px;
   height:26px;
@@ -307,7 +344,7 @@ time {
   border-radius: 14px;
 }
 
-.news-box-text h2{
+.news-box-text-ttl{
   margin-top: 20px;
   font-weight: bold;
 }
@@ -394,6 +431,9 @@ li + li {
   .container {
     padding:0 15px;
   }
+  .service-box-wrapper {
+    margin:0 70px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -403,7 +443,7 @@ li + li {
 }
 
 @media screen and (max-width:767px) {
-  .mv {
+  .header {
     margin-top: 11px;
   }
   body {
@@ -415,7 +455,7 @@ li + li {
     display: flex;
     flex-direction: column;
   }
-  .company-about {
+  .company-mv {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -426,13 +466,13 @@ li + li {
     margin-left:auto;
     margin-right:auto;
   }
-  .company-about_image {
+  .company-mv_image {
     width: 100%;
     height: auto;
     margin-left:auto;
     margin-right:auto;
   }
-  .company-about_title {
+  .company-mv_title {
     width:100%;
     display: flex;
     text-align:center;
